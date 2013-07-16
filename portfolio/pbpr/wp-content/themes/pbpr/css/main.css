@@ -1,0 +1,885 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+ 
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
+   /*for ico moon social media icons*/
+@font-face {
+  font-family: 'icomoon';
+  src:url('../fonts/icomoon.eot');
+  src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.woff') format('woff'),
+    url('../fonts/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+ /*end of ico moon media icons*/
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+    font-family: 'PTSansRegular', Helvetica, sans-serif;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    color: rgb(131, 131, 131);
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+a{
+  color: black;
+  text-decoration: none;
+  color:grey;
+}
+
+a:focus{
+  outline: none;
+}
+
+h1, h2, h3, h4{
+  font-weight:normal;
+  color:#777777;
+}
+
+h1{
+  font-family:"PTSansBold",Helvetica,Arial,sans-serif;
+  font-size:3.125em;/*50/16*/
+}
+
+h2{
+  font-size: 2em;/*36/16*/
+  font-family:"PTSansBold",Helvetica,Arial,sans-serif;
+}
+
+h3, h4{
+  font-family: "PTSansBold", Helvetica, sans-serif;
+  margin: 0;
+}
+
+h3{
+  font-size: 1.125em;/*18/16*/
+}
+
+h4 {
+  font-size: 0.75em;/*12/16*/
+}
+
+p {
+  margin: 0.625em 0 0 0;/*10/16*/
+}
+
+body{
+	background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 0%,#bbbbbb 100%) fixed; /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#bbbbbb)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#bbbbbb 100%) fixed; /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffffff 0%,#bbbbbb 100%) fixed; /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffffff 0%,#bbbbbb 100%) fixed; /* IE10+ */
+background: linear-gradient(to bottom,  #ffffff 0%,#bbbbbb 100%) fixed; /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+	/*font-size:.875em; /*14/16*/
+}
+
+/* Main wrapper */
+
+.wrapper {
+  width: 93.75%;/*960/1024*100*/
+  /*max-width: 960px;*/
+  margin: 0.625em auto;/*10/16*/
+}
+
+/*============== Header =================*/
+
+header {
+  width: 100%;
+}
+
+header .concealer {
+  float: left;
+  /*overflow: hidden;
+  height: 132px;*/
+  width: 100px;
+}
+
+header .concealer img {
+  width: 100%;
+}
+
+nav {
+  float: right;
+  height: 3.125em;/*50/16*/
+  line-height: 1.5em;/*24/16*/
+  margin-top: 80px;/*80/16*/
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  font-size: 1.125em;/*18px*/
+  text-decoration: none;
+  color: grey;
+  padding: 0.625em 10px;/*10/16,***********/
+}
+
+nav ul li a:hover{
+  color: rgb(184, 184, 184);
+}
+
+.selected {
+  color: rgb(184, 184, 184); 
+}
+
+.selected:hover {
+  color: rgb(184, 184, 184)!important;
+}
+
+/*============== index =================*/
+
+/*home page*/
+.mainvideo {
+  display: block;
+  /*height: 528px;
+  width:97.91666666667%;/*940/960*100*/
+  margin: 0 auto;
+  border: 0;
+}
+
+.mainlogo {
+  width: 42.55319148936%;/*400/940*100*/
+  position: absolute;
+  top: 25%;
+  left: 30%;/*300/940*100*/
+}
+/*end of homepage*/
+
+.main {
+  position: relative;
+  margin-top: 0.625em;/*10/16*/
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/*============== vision  =================*/
+
+.vision {
+  margin-top:20px;
+}
+
+.hero {
+  width: 100%;
+}
+
+/*============== us  =================*/
+
+.bio{
+  width: 47.91666666667%;/*460/960*100*/
+  float: left;
+  margin-top: 1.25em;/*20/16*/ 
+}
+
+.bio:last-of-type {
+  float: right;
+}
+
+/*============== strategy  =================*/
+
+.strategy {
+  width: 31.25%;/*300/960*100*/
+  float: left;
+  margin: 1.25em 0 0 0;/*20/16*/
+  padding: 0 3.125%;/*30/960*100*/
+}
+
+.strategy ul {
+  padding-left: 1.25em;/*20/16*/
+}
+
+.strategy:first-of-type {
+  padding: 0;
+  margin-top: 20px;
+}
+
+.strategy:last-of-type {
+  padding: 0;
+  float: right;
+}
+
+/*============== showcase  =================*/
+
+.flexslider{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.showcase {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/*============== blog  =================*/
+
+.primary {
+  float: left;
+  width: 62.5%;/*620/960*100*/
+}
+
+.blog {
+  width: 100%;/*600/960*100*/
+  margin-bottom: 1em;
+}
+
+.blog h2 {
+  font-style: oblique;
+  font-weight: bold;
+  float: left;
+  margin: 0;
+  display: block;
+  width: 100%;s
+}
+
+.blog a img {
+  width: auto;
+  float: left;
+  margin-right: 5px;
+}
+
+.meta {
+  float: left;
+  margin: 0 0 10px 0;
+  width: 45.666667%;
+}
+
+.blog p {
+  float: left;
+  width: 61.66666666667%;/*370/600*100*/
+}
+
+.socialbar {
+  width: 35.41666666667%;/*340/960*100*/
+  float: right;
+}
+
+.signup input{
+  height: 28px;
+  width: 65%;
+  border-radius: 5px;
+  border: 0;
+}
+
+.signup .button {
+  float: right;
+  width: 30%;
+}
+
+.signup input::-webkit-input-placeholder {
+  color: #777777;
+}
+.signup input:-moz-input-placeholder {
+  color: #777777;
+}
+.signup input:-ms-input-placeholder {
+  color: #777777;
+}
+.signup input:-o-input-placeholder {
+  color: #777777;
+}
+
+/*============== blog  =================*/
+
+.blog-single img {
+  width: 100%;
+  height: 50%;
+}
+
+.newer, .older {
+  width: 32px;
+  height: 40px;
+  /*background: red;*/
+  display: block;
+  margin: 10px auto;
+} 
+
+.newer {
+  background: url("../img/arrows.svg") no-repeat;
+  background-size: cover;
+  float: left;
+}
+
+.older{
+  background: url("../img/arrows.svg") no-repeat;
+  background-position: -32px 0px;
+  background-size: cover;
+  float: right;
+}
+
+/*============== contact  =================*/
+
+.contact {
+  width: 33.33333333333%;/*320/960*100*/
+  float: left;
+}
+
+.contact-form{
+  padding-left: 12.90322580645%;/*80/620*100*/
+}
+
+.contact-form div {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  line-height: 28px;
+  display: inline-block;
+}
+
+.contact-form input {
+  width: 77%;/*403/523*100*/
+  height: 28px;
+  border-radius: 5px;
+  border: 0;
+  float: right;
+}
+
+.contact-form textarea {
+  width: 77%;/*403/523*100*/
+  height: 200px;
+  resize: none;
+  border-radius: 5px;
+  float: right;
+  border: 0;
+}
+
+.contact-form .button {
+  width: 100px;
+  border: 0;
+}
+
+#status {
+  margin-bottom: 15px;
+  color: rgb(255, 161, 161);
+}
+
+/*============== projects  =================*/
+
+.middle {
+  width: 87.5%;/*840/960*100*/
+  margin: 0 auto;
+}
+
+.project-link {
+  width: 47.61904761905%;/*400/840*100*/
+  height: 100px;
+  float: left;
+  /*background-color: tan;*/
+  margin: 1.190476190476%;/*10/840*100*/
+  overflow: hidden;
+  -webkit-box-shadow: 7px 5px 5px rgb(180,180,180);
+  -moz-box-shadow: 7px 5px 5px rgb(180,180,180);
+  -ms-box-shadow: 7px 5px 5px rgb(180,180,180);
+  -o-box-shadow: 7px 5px 5px rgb(180,180,180);
+  box-shadow: 7px 5px 5px rgb(180,180,180);
+}
+
+.project-link img {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  height: 100% !important;
+}
+
+/*============== Footer =================*/
+
+footer {
+  margin-top: 2.5em;/*40/16*/
+  margin-bottom: 1.25em;/*20/16*/
+  width: 100%;
+  line-height: 18px;
+}
+
+footer p {
+  font-size: 0.75em;/*12/16*/
+  float: left;
+  /*padding-top: 0.4375em;/*7/16*/
+  display: block;
+  /*margin: 0 0 0 29%;*//*300/960*100*/
+  float: right;
+}
+
+.icon-facebook, .icon-twitter, .icon-envelope {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  font-size: 18px;
+  margin: 0.3125em 0.5208333333333%;/*5/16|5/960*100*/
+  color: rgb(131, 131, 131);
+  text-decoration: none;
+  float: left;
+}
+
+.fb_edge_widget_with_comment{
+  float: right;
+  padding: 5px; 
+}
+
+.twitter-share-button {
+  float: right;
+  padding: 5px;
+}
+
+.icon-facebook:hover, .icon-twitter:hover, .icon-envelope:hover {
+  color: black;
+}
+
+.icon-facebook:before {
+  content: "\71";
+}
+.icon-twitter:before {
+  content: "\77";
+}
+.icon-envelope:before {
+  content: "\65";
+}
+
+/* media queries
+------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 768px){
+  
+  body{
+    font-size: 0.8em;
+  }
+
+  .main {
+    margin-top: 0.78125em;
+  }
+
+  nav {
+    height: 3.125em;/*50/16*/
+    line-height: 1.5em;/*24/16*/
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: grey;
+    padding: 0.625em 5px;/*10/16,***********/
+  }
+
+  /*.mainvideo {
+    height:100%;
+  }*/
+
+  footer {
+    min-width: 550px;
+  }
+
+  .blog p {
+    width: 100%;
+  }
+
+  .twitter-share-button {
+    float: right;
+  }
+
+  .middle {
+    width: 100%;
+  }
+  
+}
+
+/*------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 550px){
+
+  body{
+    min-width: 300px;
+  }
+  
+  nav {
+    float: none;
+    margin: 2em 0 0 69px;
+  }
+
+  nav ul {
+    padding: 0;
+    margin-left: 20px;
+  }
+
+  nav ul li {
+    float: left;
+    text-align: left;
+    line-height: 32px;
+    width: 40%;
+  }
+
+  nav ul li img {
+    display: none;
+  }
+
+  nav ul li a {
+    width: 78.125%;/*250/320*100*/
+    font-size: 18px;
+  }
+
+  .main {
+    margin-top: 1.625em;
+  }
+
+  .strategy {
+    width: 100%;
+    float: none;
+    margin: 0;/*20/16*/
+    padding: 0;/*30/960*100*/
+  }
+
+  .bio {
+    float: none;
+    width: 100%;
+  }
+
+  .contact {
+    float: none;
+    width: 100%;
+  }
+
+  .primary {
+    float: none;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .contact-form {
+    padding: 0;
+  }
+
+  .socialbar {
+    width: 100%;
+  }
+
+  .socialbar iframe {
+    display: none;
+  }
+
+  .project-link {
+    float: none;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 1em;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+  }
+
+  /*----------------------footer--------------------*/
+
+  footer{
+    line-height: 24px;
+    min-width: 0;
+  }
+
+  footer p {
+    float: none;
+    margin: 0;
+    padding: 0 0 0 30px;
+    font-size: 13px;
+  }
+
+  .icon-facebook, .icon-twitter, .icon-envelope {
+    font-size: 24px;
+    margin: 0.5em 12%;
+  }
+
+  .twitter-share-button {
+    float: left;
+    padding: 10px 0;
+  }
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

@@ -1,0 +1,1112 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/*----- @font-face fonts -----*/
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222; }
+
+body {
+  font-size: 1em;
+  line-height: 1.4;
+  background-color: #C5F4FF;
+  min-width: 320px;
+  color: #333333;
+  font-family: "Open Sans", sans-serif; }
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+img {
+  vertical-align: middle; }
+
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical; }
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/* ==========================================================================
+   Author's custom styles
+
+   ========================================================================== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Ubuntu', sans-serif; }
+
+a {
+  text-decoration: none;
+  color: #333333; }
+
+a:hover {
+  color: #F65857; }
+
+p {
+  color: #353535;
+  font-weight: bold;
+  font-size: 1.125em;
+  /*18/16*/
+  margin: 0; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+::selection {
+  background: gold;
+  /* Safari */ }
+
+::-moz-selection {
+  background: gold;
+  /* Firefox */ }
+
+.selected {
+  color: #F65857; }
+
+/*========================================Text Styles ===========================*/
+.wrapper {
+  width: 93.75%;
+  /*960/1024*100*/
+  max-width: 960px;
+  margin: 0 auto; }
+
+header {
+  width: 100%;
+  height: 3.125em;
+  /*50/16*/
+  background: white;
+  position: fixed;
+  z-index: 1000; }
+  header h1 {
+    font-size: 0.875em;
+    /*14/16*/
+    display: inline-block;
+    padding: 0 11px;
+    line-height: 2.125em;
+    /*10/16*/
+    float: left; }
+
+nav {
+  height: 3.125em;
+  /*50/16*/
+  float: right;
+  margin: 0 20px 0 0;
+  position: relative; }
+  nav li {
+    float: left; }
+    nav li a {
+      padding: 24px 20px 0 20px;
+      display: inline-block;
+      font-size: 14px;
+      position: relative;
+      z-index: 15; }
+    nav li a:hover {
+      color: #F65857; }
+
+/*========================================Scene One===========================*/
+.sceneOne {
+  width: 100%;
+  background-image: url("../img/grassBG.svg"), url("../img/cityscapeBG.svg");
+  background-position: bottom, center bottom;
+  background-repeat: repeat-x, no-repeat;
+  position: relative; }
+  .sceneOne .wrapper.overflow {
+    position: relative;
+    height: 37.5em;
+    /*600/16*/
+    margin-top: 50px; }
+    .sceneOne .wrapper.overflow img {
+      position: absolute;
+      margin: 0 auto; }
+    .sceneOne .wrapper.overflow img:first-child {
+      top: 23.125em;
+      /*370/16*/
+      right: 0; }
+    .sceneOne .wrapper.overflow img:nth-child(2) {
+      top: 460px;
+      z-index: 20;
+      left: 28.64583333333%;
+      /*275/960*100*/ }
+    .sceneOne .wrapper.overflow img:nth-child(3) {
+      top: 385px; }
+    .sceneOne .wrapper.overflow .hide {
+      display: none; }
+    .sceneOne .wrapper.overflow .speechBubble {
+      width: 40.625%;
+      /*390/960*100*/
+      background-color: white;
+      border-radius: 20px;
+      padding: 20px 2.083333333333%;
+      /*20/960*100*/
+      position: absolute;
+      top: 100px;
+      left: 34%;
+      z-index: 100; }
+      .sceneOne .wrapper.overflow .speechBubble p {
+        text-align: center; }
+      .sceneOne .wrapper.overflow .speechBubble .tail {
+        background-color: white;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 100px;
+        left: 50px;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg); }
+
+.codeGuyTwo {
+  position: absolute;
+  top: 200px;
+  left: 18.75%;
+  /*180/960*100*/
+  z-index: 10;
+  width: 200px;
+  height: 200px;
+  background: url("../img/codeGuy2.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  -webkit-animation-name: codeGuyTwo;
+  animation-name: codeGuyTwo;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+@-webkit-keyframes codeGuyTwo {
+  50% {
+    top: 300px; } }
+
+@keyframes codeGuyTwo {
+  50% {
+    top: 300px; } }
+
+/*======================================== tooltips ===========================*/
+.ui-tooltip, .arrow:after {
+  background: gold;
+  width: 200px;
+  position: absolute;
+  border: 10px solid #727272;
+  border-bottom: 0;
+  border-left: 0;
+  border-top: 0; }
+
+.ui-tooltip {
+  padding: 10px 20px;
+  border-radius: 6px 0 0 0;
+  color: #727272;
+  font-weight: bold;
+  font-size: 18px; }
+
+.arrow {
+  width: 70px;
+  height: 16px;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  margin-left: -35px;
+  bottom: -16px; }
+
+.arrow.top {
+  top: -16px;
+  bottom: auto; }
+
+.arrow.left {
+  left: 20%; }
+
+.arrow:after {
+  content: "";
+  left: 20px;
+  top: -20px;
+  width: 25px;
+  height: 25px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  tranform: rotate(45deg); }
+
+.arrow.top:after {
+  bottom: -20px;
+  top: auto; }
+
+/*======================================== Skills scene two ===========================*/
+.sceneTwo {
+  width: 100%;
+  background: url("../img/volcanoDrape.svg") repeat-x, #b3b3b3;
+  padding-top: 80px; }
+  .sceneTwo .wrapper {
+    max-width: 960px; }
+  .sceneTwo .skills {
+    margin: 60px auto; }
+  .sceneTwo h3 {
+    text-align: center;
+    margin: 0 0 30px -10px; }
+  .sceneTwo .pipeSpace {
+    width: 48.95833333333%;
+    /*470/960*100*/ }
+    .sceneTwo .pipeSpace .pipeMain {
+      width: 80px;
+      /*80/470*100*/
+      height: 280px;
+      background-color: #999999; }
+      .sceneTwo .pipeSpace .pipeMain .badge {
+        width: 60px;
+        height: 60px;
+        display: block;
+        margin: 20px 10px; }
+      .sceneTwo .pipeSpace .pipeMain .badge:nth-child(2) {
+        margin: 30px 10px; }
+  .sceneTwo .percent {
+    width: 96.875%;
+    /*310/320*100*/
+    height: 40px;
+    margin: 10px 3.225806451613%;
+    /*10/310*100*/ }
+  .sceneTwo .pipeLeft {
+    float: left;
+    padding: 90px 7px 90px 0;
+    background-image: url(../img/pipeTop.svg), url(../img/pipeBottom.svg);
+    background-repeat: no-repeat;
+    background-position: top right, bottom right; }
+    .sceneTwo .pipeLeft .html {
+      background: #f46622 url(../img/html5.svg); }
+    .sceneTwo .pipeLeft .css {
+      background: #339dd5 url(../img/css3.svg); }
+    .sceneTwo .pipeLeft .jquery {
+      background: #111a2a url(../img/jquery.svg); }
+    .sceneTwo .pipeLeft .pipeMain {
+      float: right; }
+    .sceneTwo .pipeLeft .pipe {
+      width: 68.08510638298%;
+      /*320/470*/
+      height: 60px;
+      background-color: #727272;
+      margin: 20px 0 10px 0;
+      float: right; }
+  .sceneTwo .pipeRight {
+    float: right;
+    padding: 90px 0 90px 7px;
+    background-image: url(../img/pipeTop.svg), url(../img/pipeBottom.svg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom left; }
+    .sceneTwo .pipeRight .percent {
+      margin: 10px 10px 0 0; }
+    .sceneTwo .pipeRight .misc {
+      background: #f15034 url(../img/git.svg); }
+    .sceneTwo .pipeRight .php {
+      background: #5969a4 url(../img/php.svg); }
+    .sceneTwo .pipeRight .wordpress {
+      background: #1c769f url(../img/wordpress.svg); }
+    .sceneTwo .pipeRight .pipeMain {
+      float: left; }
+    .sceneTwo .pipeRight .pipe {
+      width: 68.08510638298%;
+      /*320/470*/
+      height: 60px;
+      background-color: #727272;
+      margin: 20px 0 10px 0;
+      float: left; }
+  .sceneTwo .cvContainer {
+    clear: both;
+    margin: 20px 10px;
+    /*10/960*100*/
+    width: 100%;
+    /*400/1400*100*/
+    min-width: 300px; }
+    .sceneTwo .cvContainer p {
+      text-align: center;
+      height: auto; }
+    .sceneTwo .cvContainer p:first-child {
+      margin-top: 30px; }
+    .sceneTwo .cvContainer p:last-child {
+      margin: 10px 0; }
+    .sceneTwo .cvContainer .cvButton {
+      display: inline-block;
+      font-weight: bold;
+      background-color: #F65857;
+      border-radius: 6px;
+      font-size: 24px;
+      padding: 24px;
+      margin: 10px 0 0 32%;
+      /*60/960*100*/
+      text-align: center; }
+    .sceneTwo .cvContainer .cvButton:hover {
+      color: #333333;
+      margin-top: 5px;
+      border-bottom: 5px solid #F72B2B; }
+
+/*======================================== Work scene three ===========================*/
+.sceneThree {
+  width: 100%;
+  background: url("../img/cavernDrape.png") repeat-x, #999999;
+  padding-top: 80px; }
+  .sceneThree .work {
+    max-width: 960px;
+    margin: 60px auto; }
+    .sceneThree .work h2:hover {
+      color: #333333; }
+    .sceneThree .work a:hover {
+      color: #333333; }
+    .sceneThree .work .showcaseOne {
+      display: inline-block;
+      cursor: pointer;
+      height: 205px;
+      background: url("../img/lavaOne.svg"), #ff6839;
+      width: 45.3125%;
+      /*435/960*100*/
+      border: solid 10px #F65857;
+      border-radius: 6px;
+      margin: 10px;
+      position: relative; }
+      .sceneThree .work .showcaseOne img {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1; }
+      .sceneThree .work .showcaseOne h2 {
+        display: table;
+        vertical-align: middle;
+        text-align: center;
+        position: relative;
+        z-index: 5;
+        margin: 80px auto; }
+    .sceneThree .work .showcaseTwo {
+      cursor: pointer;
+      display: inline-block;
+      height: 205px;
+      background: url("../img/lavaTwo.svg"), #ff6839;
+      width: 20.3125%;
+      /*195/960*100*/
+      border: solid 10px #F65857;
+      border-radius: 6px;
+      margin: 10px;
+      position: relative; }
+      .sceneThree .work .showcaseTwo h2 {
+        display: table;
+        vertical-align: middle;
+        text-align: center;
+        position: relative;
+        z-index: 5;
+        margin: 80px auto; }
+    .sceneThree .work .dropdown {
+      display: block;
+      background: #FF6839;
+      padding-right: 10px;
+      width: 88.54166666667%;
+      /*850/960*100*/
+      border: solid 10px #F65857;
+      border-radius: 6px;
+      margin-left: 4.166666666667%;
+      /*40/960*100*/
+      position: relative;
+      float: left;
+      display: none; }
+      .sceneThree .work .dropdown img {
+        width: 35.29411764706%;
+        /*300/850*100*/
+        height: 300px;
+        max-width: 300px;
+        display: block;
+        margin: 10px 2.352941176471% 10px 1.176470588235%;
+        /*20/850*100 | 10/850*100*/
+        float: left; }
+      .sceneThree .work .dropdown .button {
+        position: absolute;
+        padding: 10px 20px;
+        border-radius: 6px;
+        margin: 20px;
+        background-color: #F65857;
+        right: 0;
+        bottom: 0; }
+      .sceneThree .work .dropdown .button:hover {
+        border-bottom: 5px solid #333333;
+        margin-top: 15px; }
+      .sceneThree .work .dropdown ul {
+        float: left; }
+        .sceneThree .work .dropdown ul li {
+          padding: 5px;
+          float: left;
+          font-weight: bold; }
+
+/*======================================== contact scene four ===========================*/
+.sceneFour {
+  width: 100%;
+  background: url("../img/subterraneanDrape.png") repeat-x, #727272;
+  padding-top: 80px; }
+  .sceneFour .contact {
+    margin: 60px auto;
+    max-width: 960px; }
+  .sceneFour .message {
+    margin: 0 auto;
+    /*10/960*100*/
+    width: 90%;
+    position: relative; }
+    .sceneFour .message h2, .sceneFour .message p {
+      text-align: center; }
+  .sceneFour .contactContainer {
+    width: 640px;
+    /*640/960*100*/
+    margin: 50px auto; }
+  .sceneFour .contactDetails {
+    width: 220px;
+    /*220/960*100*/
+    background: silver;
+    border-radius: 6px;
+    padding: 20px;
+    float: left;
+    margin-right: 20px; }
+    .sceneFour .contactDetails h3 {
+      text-align: center;
+      margin: 0 0 20px; }
+    .sceneFour .contactDetails .slat {
+      margin-bottom: 5px; }
+      .sceneFour .contactDetails .slat p {
+        float: left;
+        line-height: 32px;
+        font-size: 14px;
+        margin-left: 10px; }
+      .sceneFour .contactDetails .slat span {
+        float: left;
+        display: block;
+        width: 32px;
+        height: 32px;
+        background: url(../img/contactImg.svg); }
+      .sceneFour .contactDetails .slat span.email {
+        background-position: -64px 0; }
+      .sceneFour .contactDetails .slat span.location {
+        background-position: -128px 0; }
+  .sceneFour .contact-form {
+    float: left;
+    width: 360px;
+    /*360/960*100*/
+    max-width: 500px; }
+    .sceneFour .contact-form .contact-field {
+      margin-bottom: 20px; }
+    .sceneFour .contact-form input {
+      width: 350px;
+      /*350/360*100*/
+      height: 35px;
+      line-height: 32px;
+      border-radius: 6px;
+      float: right;
+      border: none;
+      padding: 1px 0 0 10px; }
+    .sceneFour .contact-form ::-webkit-input-placeholder {
+      font-weight: bold;
+      font-size: 24px;
+      color: #333333; }
+    .sceneFour .contact-form :-moz-input-placeholder {
+      font-weight: bold;
+      font-size: 24px;
+      color: #333333; }
+    .sceneFour .contact-form textarea {
+      width: 350px;
+      /*350/360*100*/
+      resize: none;
+      border-radius: 6px;
+      float: right;
+      border: none;
+      padding: 4px 0 0 10px;
+      height: 200px; }
+    .sceneFour .contact-form #send {
+      background-color: #F65857;
+      font-weight: bold;
+      font-size: 24px;
+      float: right;
+      width: auto;
+      padding: 19px 41px;
+      height: auto;
+      line-height: 0;
+      border-radius: 6px;
+      border: none;
+      margin-top: 5px; }
+    .sceneFour .contact-form #send:hover {
+      border-bottom: 5px solid #F72B2B;
+      margin-top: 0px; }
+
+/*========================================Footer===========================*/
+footer {
+  width: 100%;
+  background: black; }
+  footer .wrapper {
+    position: relative; }
+    footer .wrapper .backToTop {
+      position: absolute;
+      border-radius: 25px;
+      width: 100px;
+      height: 60px;
+      background: black url(../img/arrow.svg);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      top: -40px;
+      left: 47%;
+      /*400px*/ }
+    footer .wrapper .backToTop:hover {
+      background-position: 0px -62px; }
+  footer p {
+    display: inline-block;
+    margin: 32px 20px;
+    color: white;
+    font-size: 12px;
+    font-weight: lighter; }
+  footer .socialMedia {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    float: right;
+    margin: 24px 5px; }
+  footer .socialMedia:hover {
+    border-bottom: 3px solid #F72B2B;
+    margin-top: 21px; }
+  footer .facebook {
+    background: url(../img/facebook.svg) #f65857;
+    background-size: cover; }
+  footer .twitter {
+    background: url(../img/twitter.svg) #f65857;
+    background-size: cover; }
+  footer .linkedin {
+    background: url(../img/linkedin.svg) #f65857;
+    background-size: cover; }
+
+/* ==========================================================================
+*******************************************************************************
+   Mediaqueries
+*******************************************************************************
+   ========================================================================== */
+@media only screen and (max-width: 756px) {
+  .sceneOne .wrapper.overflow .speechBubble {
+    width: 45%;
+    /*390/960*100*/
+    top: 80px;
+    left: 30%;
+    z-index: 100; }
+    .sceneOne .wrapper.overflow .speechBubble .tail {
+      display: none; }
+
+  .sceneTwo .skills {
+    margin: 60px auto; }
+  .sceneTwo .pipeSpace {
+    width: 96%;
+    /*470/960*100*/ }
+  .sceneTwo .percent {
+    width: 96.875%;
+    /*310/320*100*/
+    height: 40px;
+    margin: 10px 3.225806451613%;
+    /*10/310*100*/ }
+  .sceneTwo .pipeLeft {
+    float: left;
+    padding: 30px 10px 30px 0; }
+    .sceneTwo .pipeLeft .pipeMain {
+      float: right; }
+    .sceneTwo .pipeLeft .pipe {
+      width: 80%;
+      /*320/470*/ }
+  .sceneTwo .pipeRight {
+    float: right;
+    padding: 30px 0 30px 10px; }
+    .sceneTwo .pipeRight .percent {
+      margin: 10px 10px 0 0; }
+    .sceneTwo .pipeRight .pipe {
+      width: 80%;
+      /*320/470*/ }
+  .sceneTwo .cvContainer {
+    width: 93.75%;
+    /*400/1400*100*/
+    margin: 0 auto; }
+    .sceneTwo .cvContainer .cvButton {
+      display: block;
+      margin: 10px auto;
+      /*60/960*100*/ }
+
+  .sceneThree .work .showcaseOne {
+    width: 93%;
+    /*435/960*100*/ }
+    .sceneThree .work .showcaseOne img {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1; }
+    .sceneThree .work .showcaseOne h2 {
+      display: table;
+      vertical-align: middle;
+      text-align: center;
+      position: relative;
+      z-index: 5;
+      margin: 80px auto; }
+  .sceneThree .work .showcaseTwo {
+    cursor: pointer;
+    display: inline-block;
+    height: 205px;
+    background: url("../img/lavaTwo.svg"), #ff6839;
+    width: 93%;
+    /*435/960*100*/
+    border: solid 10px #F65857;
+    border-radius: 6px;
+    margin: 10px;
+    position: relative; }
+    .sceneThree .work .showcaseTwo h2 {
+      display: table;
+      vertical-align: middle;
+      text-align: center;
+      position: relative;
+      z-index: 5;
+      margin: 80px auto; }
+  .sceneThree .work .dropdown {
+    display: block;
+    background: #FF6839;
+    padding-right: 10px;
+    width: 88.54166666667%;
+    /*850/960*100*/
+    border: solid 10px #F65857;
+    border-radius: 6px;
+    margin-left: 4.166666666667%;
+    /*40/960*100*/
+    position: relative;
+    float: left;
+    display: none; }
+    .sceneThree .work .dropdown img {
+      width: 35.29411764706%;
+      /*300/850*100*/
+      height: 300px;
+      max-width: 300px;
+      display: block;
+      margin: 10px 2.352941176471% 10px 1.176470588235%;
+      /*20/850*100 | 10/850*100*/
+      float: left; }
+    .sceneThree .work .dropdown .button {
+      position: absolute;
+      padding: 10px 20px;
+      border-radius: 6px;
+      margin: 20px;
+      background-color: #F65857;
+      right: 0;
+      bottom: 0; }
+    .sceneThree .work .dropdown .button:hover {
+      border-bottom: 5px solid #333333;
+      margin-top: 15px; }
+    .sceneThree .work .dropdown ul {
+      float: left; }
+      .sceneThree .work .dropdown ul li {
+        padding: 5px;
+        float: left;
+        font-weight: bold; }
+
+  .sceneFour .contact {
+    margin: 60px auto;
+    max-width: 960px; }
+  .sceneFour .contactContainer {
+    width: 93.75%;
+    /*640/960*100*/
+    margin: 50px auto; }
+  .sceneFour .contactDetails {
+    width: 45%;
+    /*220/960*100*/
+    background: silver;
+    border-radius: 6px;
+    padding: 10px 10px;
+    float: left;
+    margin-right: 0; }
+    .sceneFour .contactDetails .slat {
+      margin: 0 auto 5px auto; }
+      .sceneFour .contactDetails .slat p {
+        float: right;
+        line-height: 32px;
+        font-size: 12px;
+        margin-left: 10px; }
+      .sceneFour .contactDetails .slat span {
+        float: left;
+        display: block;
+        width: 32px;
+        height: 32px; }
+  .sceneFour .contact-form {
+    float: right;
+    width: 45%;
+    /*360/640*100*/ }
+    .sceneFour .contact-form input {
+      width: 97.22222222222%;
+      /*350/360*100*/ }
+    .sceneFour .contact-form textarea {
+      width: 97.22222222222%;
+      /*350/360*100*/ } }
+@media only screen and (max-width: 500px) {
+  .wrapper {
+    width: 93.75%;
+    /*960/1024*100*/
+    max-width: 300px;
+    margin: 0 auto; }
+
+  header {
+    min-width: 300px;
+    height: auto; }
+    header h1 {
+      font-size: 0.875em;
+      display: block;
+      float: none;
+      text-align: center; }
+
+  nav {
+    float: none;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    min-width: 300px;
+    margin: 0 auto;
+    display: block; }
+    nav li {
+      float: left;
+      width: 50%;
+      background-color: white;
+      text-align: center; }
+      nav li a {
+        padding: 10px;
+        display: block;
+        font-size: 18px;
+        position: relative; }
+
+  .sceneOne .wrapper.overflow .speechBubble {
+    width: 95%;
+    /*390/960*100*/
+    top: 110px;
+    left: 0;
+    z-index: 100; }
+  .sceneOne .wrapper.overflow img:first-child {
+    display: none; }
+
+  .sceneTwo {
+    padding-top: 30px; }
+    .sceneTwo .skills {
+      margin: 60px auto; }
+    .sceneTwo .pipeSpace {
+      display: none; }
+
+  .sceneThree .work .showcaseOne {
+    width: 93%;
+    /*435/960*100*/
+    margin: 5px auto; }
+    .sceneThree .work .showcaseOne img {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1; }
+    .sceneThree .work .showcaseOne h2 {
+      display: table;
+      vertical-align: middle;
+      text-align: center;
+      position: relative;
+      z-index: 5;
+      margin: 80px auto; }
+  .sceneThree .work .showcaseTwo {
+    cursor: pointer;
+    display: inline-block;
+    height: 205px;
+    background: url("../img/lavaTwo.svg"), #ff6839;
+    width: 93%;
+    /*435/960*100*/
+    border: solid 10px #F65857;
+    border-radius: 6px;
+    margin: 5px auto;
+    position: relative; }
+    .sceneThree .work .showcaseTwo h2 {
+      display: table;
+      vertical-align: middle;
+      text-align: center;
+      position: relative;
+      z-index: 5;
+      margin: 80px auto; }
+  .sceneThree .work .dropdown {
+    width: 89%;
+    /*850/960*100*/
+    margin-left: 0%;
+    /*40/960*100*/ }
+    .sceneThree .work .dropdown img {
+      width: 100%;
+      /*300/850*100*/
+      height: 300px;
+      max-width: 300px;
+      display: block;
+      margin: 10px auto;
+      /*20/850*100 | 10/850*100*/
+      float: none; }
+
+  .sceneFour .contact {
+    margin: 60px auto;
+    max-width: 960px; }
+  .sceneFour .contactContainer {
+    width: 93.75%;
+    /*640/960*100*/
+    margin: 50px auto; }
+  .sceneFour .contactDetails {
+    width: 93.75%;
+    /*220/960*100*/
+    background: silver;
+    border-radius: 6px;
+    padding: 10px 10px;
+    float: none;
+    margin-right: 0; }
+    .sceneFour .contactDetails .slat {
+      margin: 0 auto 5px auto; }
+      .sceneFour .contactDetails .slat p {
+        float: right;
+        line-height: 32px;
+        font-size: 12px;
+        margin-left: 10px; }
+      .sceneFour .contactDetails .slat span {
+        float: left;
+        display: block;
+        width: 32px;
+        height: 32px; }
+  .sceneFour .contact-form {
+    margin-top: 10px;
+    float: none;
+    width: 93.75%;
+    /*360/640*100*/ }
+    .sceneFour .contact-form input {
+      width: 90%;
+      /*350/360*100*/ }
+    .sceneFour .contact-form textarea {
+      width: 90%;
+      /*350/360*100*/ }
+
+  footer {
+    width: 100%;
+    background: black; }
+    footer .wrapper {
+      position: relative; }
+      footer .wrapper .backToTop {
+        left: 35%;
+        /*400px*/ }
+    footer p {
+      display: block;
+      margin: 32px auto;
+      text-align: center; }
+    footer .socialMedia {
+      width: 64px;
+      height: 64px;
+      border-radius: 6px;
+      float: left;
+      margin: 24px 17px; } }
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Image replacement
+ */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px; }
+
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%; }
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+.invisible {
+  visibility: hidden; }
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.clearfix:after {
+  clear: both; }
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+  *zoom: 1; }
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */ }
+@media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */ }
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important; }
+
+  a,
+  a:visited {
+    text-decoration: underline; }
+
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: ""; }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */ }
+
+  tr,
+  img {
+    page-break-inside: avoid; }
+
+  img {
+    max-width: 100% !important; }
+
+  @page {
+    margin: 0.5cm; }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+
+  h2,
+  h3 {
+    page-break-after: avoid; } }

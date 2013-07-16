@@ -1,0 +1,1374 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    background-image: url(../img/bgfinal2.jpg);
+    background-size: cover;
+    font-size: 1em;
+    line-height: 1.4;
+    z-index: -10;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* @fontface */
+
+@font-face {
+    font-family: 'florencesansbold';
+    src: url('../font/florsn02.eot');
+    src: url('../font/florsn02.eot?#iefix') format('embedded-opentype'),
+         url('../font/florsn02.woff') format('woff'),
+         url('../font/florsn02.ttf') format('truetype'),
+         url('../font/florsn02.svg#florencesansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:url('../font/icomoon.eot');
+    src:url('../font/icomoon.eot?#iefix') format('embedded-opentype'),
+        url('../font/icomoon.svg#icomoon') format('svg'),
+        url('..font/icomoon.woff') format('woff'),
+        url('../font/icomoon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PTSansBold';
+    src: url('../font/PTS75F-webfont.eot');
+    src: url('../font/PTS75F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/PTS75F-webfont.woff') format('woff'),
+         url('../font/PTS75F-webfont.ttf') format('truetype'),
+         url('../font/PTS75F-webfont.svg#PTSansBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* ==========================================================================
+   text + button styles
+   ========================================================================== */
+
+h2 {
+    color: white;
+    font-family: 'florencesansbold', helvetica, sans-serif;
+    font-size: 2.25em; /*36/16*/
+    padding: 0;
+    margin: 0 5px 0 5px;
+    font-weight: normal;
+}
+
+h3 {
+    color: #4f328b;
+    font-family: 'florencesansbold', helvetica, sans-serif;
+    font-size: 2em; /*32/16*/
+    margin: 0;
+    font-weight: normal;
+}
+
+th {
+    color: #4f328b;
+    font-family: 'florencesansbold', helvetica, sans-serif;
+    font-size: 2em; /*32/16*/
+    margin: 0;
+    font-weight: normal;
+}
+
+h4 {
+    color: #4f328b;
+    font-family: 'florencesansbold', helvetica, sans-serif;
+    font-size: 1.5em; /*24/16*/
+    font-weight: normal;
+}
+
+h5 {
+    color: white;
+    font-family: 'florencesansbold', helvetica, sans-serif;
+    font-size: 1.25em; /*20/16*/
+    font-weight: normal;
+}
+
+p {
+    color: #4f328b;
+    font-family: 'PTSansBold', helvetica, sans-serif;
+    font-size: 1em; /*16/16*/
+    margin: 5px;
+    padding: 0;
+    font-weight: normal;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+label {
+    font-family: 'florencesansbold', helvetica, sans-serif;
+    font-size: 24px;
+    color: #4f328b;
+    width: 100px;
+}
+
+textarea:focus, input:focus {
+    border: 2px solid #4f328b;
+}
+
+.buyban {
+    width: 290px;
+    height: 35px;
+    background-image: url(../img/bigbadge.png);
+    margin-bottom: 10px;
+}
+
+.buyban:hover {
+    background-position: 0 -35px;
+}
+
+.buyban a {
+    font-family: 'florencesansbold', helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+.buyban a:hover {
+    color: #1db093;
+}
+
+.button {
+    background-image: url(../img/button.png);
+    background-repeat: no-repeat;
+    width: 162px;
+    height: 29px;
+}
+
+.button a {
+    line-height: 29px;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+}
+
+.button a:hover {
+    color: #1db093;
+}
+
+.nav-control {
+    display: none;
+}
+
+
+/* ==========================================================================
+   outer structure
+   ========================================================================== */
+
+.wrapper {
+    width: 93.75%; /*960/1024*100*/
+    max-width: 960px;
+    margin: 0 auto 0 auto;
+}
+
+.main {
+    width: 97.91666666667%; /*940/960*100*/
+    margin: 0 auto 0 auto;
+    position: relative;
+}
+
+
+/* ==========================================================================
+   header
+   ========================================================================== */
+
+
+header {
+    width: 97.91666666667%; /*940/960*100*/
+    margin: 0.625em auto; /*10/16*/
+}
+
+h1 {
+    display: block;
+    text-indent: -90000px;
+    margin: 0px;
+    float: left;
+    width: 0;
+}
+
+.logo {
+    width: 49.78723404255%; /*468/940*100*/
+    float: left;
+    cursor: pointer;
+}
+
+.deco {
+    width: 50.10638297872%; /*471/940*100*/
+    float: right;
+}
+
+/* ==========================================================================
+   nav
+   ========================================================================== */
+
+nav {
+    width: 97.91666666667%; /*940/960*100*/
+    background-image: url(../img/transparency.png);
+    margin: 0 auto;
+}
+
+nav ul {
+    width: 97.87234042553%; /*920/940*100*/
+    margin: 0 auto 0 auto;
+    padding: 0;
+    position: relative;
+}
+
+nav ul li {
+    margin-left: 6.739130434783%; /*62/920*100*/
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    font-family: 'florencesansbold', helvetica, sans-serif;
+    font-size: 1.625em; /*26/16*/
+    color: #4f328b;
+    text-decoration: none;
+    margin: 0 auto 0 auto;
+    line-height: 1.923076923077em; /*50/26*/
+}
+
+a:hover {color:#1db093;}  /* mouse over link */
+a:active {color:#1db093;}  /* selected link */
+nav ul li a.selected {color:#1db093;}
+
+/*/////////////////////////////// triangles are d //////////////////////*/
+
+.ico {
+    font-family: 'icomoon';
+    font-size: 0.6923076923077em; /*18/26*/
+    padding-right: 0.531914893617%; /*5/940*100*/
+}
+
+/* ==========================================================================
+   dropdown
+   ========================================================================== */
+
+.dropdown {
+    position: absolute;
+    left: -9999px;
+    width: auto;
+    z-index: 1000;
+}
+
+.dropdown li {
+    float: none;
+    margin: 0;
+    text-align: left;
+    background-image: url(../img/transparency.png);
+    padding-left: 3%; /*?*/
+    width: 100%;
+}
+
+.dropdown a {
+    font-size: 1.25em; /*20/16*/
+    display: inline-block;
+    line-height: 1.4em; /*28/20*/
+    white-space:nowrap;
+}
+
+nav li:hover .dropdown {
+    left: -5px;
+}
+
+/* ==========================================================================
+    top
+   ========================================================================== */
+
+.top {
+    width: 31.91489361702%; /*300/940*100*/
+    position: absolute;
+    left: 68.08510638298%; /*640/940*100*/
+    margin: 1.25em 0;
+}
+
+/* ==========================================================================
+   secondary col
+   ========================================================================== */
+
+.secondary {
+    width: 31.91489361702%; /*300/940*100*/
+    float: right;
+    margin: 1.25em 0; /*20/16*/
+}
+
+.secondary img {
+    width: 100%;
+}
+
+.secondary .buyban {
+    margin: 0;
+}
+
+.social {
+    width: 200px; /*200/300*100*/
+    margin: 0 auto 0 auto;
+    cursor: pointer;
+    margin-bottom: 0.625em;
+}
+
+.twitter {
+    width: 40px;
+    height: 35px;
+    background-image: url(../img/bigsocialsprite.png);
+    float: right;
+}
+
+.tumblr {
+    width: 40px;
+    height: 35px;
+    background-image: url(../img/bigsocialsprite.png);
+    float: right;
+    background-position: -40px 0;
+
+}
+
+.facebook {
+    width: 40px;
+    height: 35px;
+    background-image: url(../img/bigsocialsprite.png);
+    float: right;
+    background-position: -80px 0;
+}
+
+.youtube {
+    width: 40px;
+    height: 35px;
+    background-image: url(../img/bigsocialsprite.png);
+    float: right;
+    background-position: -120px 0;
+}
+
+.blank {
+    width: 40px;
+    height: 35px;
+    background-image: url(../img/bigsocialsprite.png);
+    float: right;
+    background-position: -160px 0;
+}
+
+.twitter:hover {background-position: 0 -35px}
+.tumblr:hover {background-position: -40px -35px}
+.facebook:hover {background-position: -80px -35px}
+.youtube:hover {background-position: -120px -35px}
+
+
+
+ol {
+    float: left;
+    width: 120px;
+    padding: 0 0 0 25px;
+    font-family: 'PTSansBold',helvetica,sans-serif;
+    font-size: 14px;
+    color: #4f328b;
+}
+
+ol.bside {
+    float: right;
+}
+
+iframe {
+    margin-bottom: 10px;
+    border: none;
+}
+
+iframe.map {
+    width: 300px;
+    height: 300px;
+
+}
+
+
+/* ==========================================================================
+   hero col
+   ========================================================================== */
+.hero {
+    width: 65.95744680851%; /*620/940*100*/
+    height: auto;
+    float: left;
+    margin-top: 1.25em;
+}
+
+
+
+/* ==========================================================================
+   primary col
+   ========================================================================== */
+
+.primary {
+    width: 65.95744680851%; /*620/940*100*/
+    margin: 1.25em 0; /*20/16*/
+    position: relative;
+    float: left;
+}
+
+.primary img {
+    width: 100%;
+}
+
+.primary iframe {
+    width: 100%;
+}
+
+.flexy-video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */ 
+    padding-top: 25px;
+    height: 0;
+}
+
+.flexy-video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.primary h2 {
+    position: absolute;
+    top: 250px;
+}
+
+article {
+    position: relative;
+    margin: 0 0 2.41935483871% 0; /*15/16--15/620*100*/
+    width: 48.38709677419%; /*300/620*100*/
+    position: relative;
+    float: right;
+}
+
+article img {
+    width: 100%;
+}
+
+
+.article2 {
+    position: relative;
+    margin: 90px 0 15px 0;
+    width: 100%; /*300/300*100*/
+    position: relative;
+    float: right;
+}
+
+.primary article h2, .secondary article h2 {
+    position: absolute;
+    top: 50px;
+}
+
+.lefthand {
+    margin-right: 3.225806451613%; /*20/620*100*/
+}
+
+/*article:first-child {
+    margin-right: 20px;
+}*/
+
+article p {
+    margin-bottom: 30px;
+}
+
+article .button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/* ==========================================================================
+   tickets
+   ========================================================================== */
+
+.col1 {
+    width: 17.02127659574%; /* 160/940*100*/
+    float: left;
+    margin-top: 130px;
+}
+
+.spacercol {
+    width: 17.02127659574%; /* 160/940*100*/
+    float: left;
+    margin-top: 130px;
+}
+
+.col2 {
+    width: 50%; /*470/940*100*/
+    float: left;
+    margin-left: 1.063829787234%; /*10/940*100*/
+    margin-top: 20px;
+}
+
+fieldset {
+    margin-top: 20px;
+}
+
+.col2 label {
+    line-height: 24px;
+    float: left;
+    margin: 0 0 20px 0;
+}
+
+.col2 input {
+    background-image: url(../img/transparency.png);
+    background-color: transparent;
+    width: 50%; /*300/470*100*/
+    float: right;
+    margin: 0 6.666666666667% 15px 0; /*20/300*100*/
+    line-height: 24px;
+}
+
+.col2 textarea {
+    background-image: url(../img/transparency.png);
+    background-color: transparent;
+    width: 50%; /*300/470*100*/
+    float: right;
+    margin: 0 6.666666666667% 20px 0;
+}
+
+input[type="button"] {
+    background-image: url(../img/button.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    width: 162px; /*162/300*100*/
+    height: 29px;
+    font-size: 1.5em;
+    color: white;
+    margin-top: 10px;
+}
+
+input[type="button"]:hover {
+    color: #1db093;
+}
+
+.col3 {
+    width: 31.91489361702%; /*300/940*100*/
+    float: right;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.col3 .slat {
+    margin: 10px 0;
+}
+
+.col3 p {
+    margin-left: 60px;
+}
+
+.col3 .button {
+    float: right;
+}
+
+.box {
+    background-image: url(../img/box1.png);
+    background-size: 100%;
+    width: 98.93617021277%; /*465/470*100*/
+    height: 160px;
+    margin: 10px 0;
+    position: relative;
+}
+
+.box h3, .box p {
+    margin-left: 50px;
+}
+
+.box img {
+    position: absolute;
+    width: 30%;
+    top: 100px;
+    left: 50px;
+}
+
+/* ==========================================================================
+   schedule
+   ========================================================================== */
+
+ table {
+    width: 97.87234042553%; /*460/470*100*/
+    margin: 10px 0 0 0;
+ }
+
+th {
+    text-align: left;
+}
+
+tr {
+    font-family: 'florencesansbold', helvetica, sans-serif;
+    color: #4f328b;
+}
+
+td {
+    padding-left: 10px;
+}
+
+tr:nth-child(even) {
+    background-image: url(../img/transparency.png);
+}
+
+td:nth-child(even) {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.box2 {
+    background-image: url(../img/box2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%; /*299/300*100*/
+    height: 91px;
+    margin: 20px 0 20px 0;
+}
+
+.box2 h4 {
+    width: 230px;
+    margin: 12px auto; /*12/16*/
+}
+
+/* ==========================================================================
+   lineup
+   ========================================================================== */
+.gallery {
+    width: 69.14893617021%; /*650/940*100*/
+    float: right;
+    margin-top: 10px;
+    max-width: 680px;
+}
+
+.image {
+    width: 31.42857142857%; /*220/700*100*/
+    height: 110px;
+    margin-left: 1.428571428571%; /*10/700*100*/
+    margin-bottom: 10px;
+    float: left;
+    background-image: url(../img/hoverstate.png);
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: auto;
+    overflow: hidden;
+}
+
+.image h5 {
+    position: absolute;
+    margin: 15px 0 10px 5px;
+    opacity: 0;
+}
+
+a:hover h5 {
+    opacity: 1;
+}
+
+.image img {
+    position: absolute;
+    z-index: -1;
+}
+
+.image:hover {
+    background-position: 0 -110px;
+}
+
+/* ==========================================================================
+   gallery
+   ========================================================================== */
+
+.tabs {
+    margin-top: 10px;
+    width: 220px;
+    position: absolute;
+}
+
+.galimage {
+    width: 46.15384615385%; /*300/650*100*/
+    height: 110px;
+    margin-left: 3.538461538462%; /*23/650*100*/
+    float: left;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.galimage:hover {
+    opacity: 0.5;
+}
+
+.galban {
+    width: 220px;
+    height: 30px;
+    background-image: url(../img/gallerybanner.png);
+    background-position: 0 -30px;
+    margin-bottom: 10px;
+}
+
+.galban:hover {
+    background-position: 0 0;
+    cursor: pointer;
+}
+
+.galban a {
+    font-family: 'florencesansbold', helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+.galban a:hover {
+    color: #1db093;
+}
+
+
+/* ==========================================================================
+   sponsor
+   ========================================================================== */
+
+.sponsors {
+    width: 65.95744680851%; /*620/940*100*/
+    margin: 0 auto;
+}
+
+.sponsors img {
+    width: 16.12903225806%; /*100/620*100*/
+    margin: 0.625em 1%; /*10/620*100--10/16*/
+    cursor: pointer;
+}
+
+.sponsors img:hover {
+    opacity: 0.5;
+}
+
+
+/*--------------------------------- IE message -------------------------------------------*/
+
+.ie-message {
+    display: none;
+}
+
+.lt-ie8 .ie-message {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    width: 940px;
+    color: #bf923f;
+}
+
+.lt-ie8 .wrapper {
+    display: none;
+}
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   footer
+   ========================================================================== */
+
+footer {
+    width: 100%; /*940/940*100*/
+    background-image: url(../img/transparency.png);
+    margin: 0 auto 0.625em auto; /*10/16*/
+}
+
+footer ul {
+    width: 80%; /*752/940*100*/
+    display: block;
+    padding: 0;
+    line-height: 30px;
+    margin: 0 auto; /*60/752*100*/
+    list-style: none;
+}
+
+.disclaimer {
+    margin: 0;
+}
+
+footer ul li {
+    font-family: 'florencesansbold', helvetica, sans-serif;
+    color: #4f328b;
+    font-size: 0.875em; /*14/16*/
+    float: left;
+    margin-left: 1%; /*30/940*100*/
+}
+/*footer ul li:nth-child(2) {
+    padding-left: 160px;
+}*/
+
+footer a {
+    color: #4f328b;
+    font-size: 1.6em;
+    margin-left: 40px;
+}
+
+
+/*.social-b {
+    float: right;
+    display: inline;
+    margin: 10px 10px 10px 0;
+}*/
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+        
+}
+
+@media only screen and (max-width: 960px) {
+
+    body {
+        font-size: 0.8em;
+    }
+
+    .top {
+        width: 100%;
+        position: static;
+        margin: 1.25em auto 0 auto;
+    }
+
+    .top .buyban {
+        float: right;
+        margin: 0;
+    }
+
+    .top .social {
+        float: left;
+        margin: 0;
+    }
+
+    article.lefthand {
+        margin-right: 0;
+        float: left;
+    }
+
+    .article2 {
+        margin: 0;
+    }
+
+    .flashban {
+        display: none;
+        overflow: hidden;
+    }
+
+    .spacercol {
+        display: none;
+    }
+
+    .col1 {
+        display: none;
+    }
+
+    .gallery {
+        width: 100%;
+    }
+
+    .gallery .image h5 {
+        font-size: 1.625em;
+    }
+
+    /*//////////////////////////gallery ///////////////// */
+
+    .tabs {
+        width: 100%;
+        position: static;
+        margin-top: 0;
+    }
+
+    .tabs .galban {
+        float: left;
+        margin-left: 2%;
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
+
+    /* ////////////////////////// artist page /////////// */
+
+
+    ol, ol.bside {
+        float: none;
+        width: 100%;
+    }
+
+    ol {
+        margin-bottom: 0;
+    }
+
+    .secondary .bside {
+        margin-top: 0;
+    }
+
+    .secondary iframe {
+        width: 100%;
+    }
+
+    .primary h2 {
+        top: 200px;
+    }
+
+    /* ////////////////////////// schedule and tickets ////////////////// */
+
+    .col3 {
+        width: 45%;
+    }
+
+    .col3 .slat {
+        width: 80%;
+        margin: 10px auto 0 auto;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    body {
+        min-width: 700px;
+    }
+
+    nav ul li {
+        margin-left: 6%;
+    }
+
+    .primary .social {
+        display: none;
+    }
+
+    .hero {
+        width: 100%;
+    }
+
+    .col1 {
+        height: auto;
+    }
+
+    .flashban {
+        display: none;
+    }
+
+    .spacercol {
+        height: auto;
+    }
+
+    .primary article h2, .secondary article h2 {
+        top: 30px;
+    }
+
+    .primary h2 {
+        top: 165px;
+    }
+
+    .col2 input {
+        margin: 0 21px 15px 0;
+    }
+
+    .tabs .galban {
+        margin-left: 0;
+    }
+
+        
+}
+
+@media only screen and (max-width: 540px) {
+
+    body {
+        font-size: 1em;
+        min-width: 0;
+    }
+
+    .nav-control {
+        display: block;
+        width: 100%; /*940/960*100*/
+        margin: 0 auto;
+        padding: 5px;
+    }
+
+    .nav-control img {
+        margin: 0 40% 0 40%;
+        width: 20%;
+    }
+
+    nav {
+        width: 50%;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+    nav.contact {
+        background-image: none;
+    }
+
+    nav.contact ul li {
+        float: none;
+        text-align: left;
+        margin-bottom: 5px;
+        background: rgba(255, 255, 255, 0.5);
+    }
+
+    nav.contact ul li a {
+        padding-left: 5px;
+    }
+
+    .contact {
+        display: none;
+    }
+
+    .deco {
+        display: none;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    article {
+        float: none;
+        width: 90%;
+        margin: 0 auto 0 auto;
+    }
+
+    article.lefthand {
+        float: none;
+        width: 90%;
+        margin: 0.625em auto 0 auto;
+    }
+
+    .primary {
+        width: 100%;
+        margin: 0;
+    }
+
+    .secondary {
+        width: 100%;
+        margin: 0.625em auto 0.625em auto;
+    }
+
+    article.article2 {
+        float: none;
+        width: 90%;
+        margin: 0 auto 0 auto;
+    }
+
+    article img {
+        width: 100%;
+    }
+
+    .top .social {
+        margin: 0 auto 0.625em auto;
+        float: none;
+    }
+
+    .top .buyban {
+        float: none;
+        margin: 0 auto;
+    }
+
+    .primary article h2, .secondary article h2 {
+        top: 60px;
+    }
+
+    .primary h2 {
+        top: 125px;
+    }
+
+    .image {
+        float: none;
+        width: 300px;
+        margin: 10px auto 0 auto;
+    }
+
+    .image img {
+        width: 100%;
+    }
+
+    .gallery {
+        margin: 0;
+    }
+
+    /* ///////////////////////////////////////// gallery /////////////////// */
+
+    .tabs {
+        margin: 0 auto 10px auto;
+    }
+
+    .tabs .galban {
+        margin: 10px auto 0 10px;
+        display: block;
+    }
+
+    .galimage {
+        float: none;
+        width: 100%;
+    }
+
+    /* ////////////////////////// schedule and tickets ////////////////// */
+
+    .col2 {
+        width: 100%;
+        float: none;
+    }
+
+    .col3 {
+        width: 100%;
+        float: none;
+    }
+
+    .box img {
+        left: 200px;
+    }
+
+    ol {
+    float: left;
+    width: 120px;
+    padding: 0 0 0 25px;
+    }
+
+    ol.bside {
+    float: right;
+    width: 120px;
+    padding: 10px 0 0 25px;
+    }
+
+    .sponsors {
+        width: 90%;
+        margin: 0 auto 0 auto;
+    }
+
+    .sponsors img {
+        text-align: center;
+        margin: 10px 1%;
+    }
+
+    .disclaimer {
+        font-size: 0.5em;
+    }
+
+    footer li a {
+        font-size: 1em;
+    }
+
+
+
+
+
+
+
+}
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow:none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

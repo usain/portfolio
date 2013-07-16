@@ -1,0 +1,515 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.wrapper {
+    width: 1650px;
+    height: 1024px;
+    margin: 0 auto;
+    position: relative;
+    background-color: black;
+    overflow: hidden;
+}
+
+.cloud1 {
+    background-image: url(../img/cloud2.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 544px;
+    height: 376px;
+    z-index: 10;
+    top: -40px;
+    left: 200px;
+}
+
+.cloud1 {
+    -webkit-animation-name: cloud1;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-iteration-count: 1;   
+    -webkit-animation-direction: normal;
+    -webkit-animation-delay: 5s;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes cloud1 {
+
+    from {
+        top: -40px;
+        left: 200px;
+    }
+    
+    to {
+        top: 100px;
+        left: 1300px;
+    }
+}
+
+.moon {
+    background-image: url(../img/moon.png);
+    width: 250px;
+    height: 270px;
+    position: absolute;
+    z-index: 20;
+    top: 50px;
+    left: 200px;
+}
+
+.moon:hover {
+    background-position: -251px;
+}
+
+.cloud2 {
+    background-image: url(../img/cloud2.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 544px;
+    height: 376px;
+    z-index: 30;
+    top: 100px;
+    left: 80px;
+    -webkit-animation-name: cloud2;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-iteration-count: 1;   
+    -webkit-animation-direction: normal;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes cloud2 {
+
+    from {
+        top: 100px;
+        left: 80px;
+    }
+    
+    to {
+        top: 120px;
+        left: -225px;
+    }
+}
+
+.cloud3 {
+    background-image: url(../img/cloud1.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 544px;
+    height: 376px;
+    z-index: 40;
+    left: 100px;
+    top: 75px;
+    -webkit-animation-name: cloud3;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-iteration-count: 1;   
+    -webkit-animation-direction: normal;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes cloud3 {
+
+    from {
+        top: 75px;
+        left: 100px;
+    }
+    
+    to {
+        top: 90px;
+        left: 375px;
+    }
+}
+
+.background {
+    position: absolute;
+    z-index: 15;
+    top: 300px;
+}
+
+.midground {
+    position: absolute;
+    z-index: 60;
+    top: 380px;
+}
+
+@-webkit-keyframes gravemarker {
+
+from { background-position: 0px 0px;}
+    to { background-position: -900px 0px; }
+}
+
+.gravemarker {
+    background-image: url(../img/gravemarker.png);
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    z-index: 70;
+    top: 300px;
+    left: 1010px;
+    -webkit-animation: gravemarker 5s steps(3, end) infinite;
+    -webkit-animation-delay: 3s;
+}
+
+
+
+.foreground {
+    position: absolute;
+    z-index: 80;
+    top: 850px;
+}
+
+.mouse {
+    background-image: url(../img/mouse.png);
+    background-position: -1500px;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    z-index: 90;
+    top: 680px;
+    left: 1150px;
+    -webkit-animation: mouse 8.25s steps(6, end) 1;
+    -webkit-animation-delay: 0;
+       
+}
+
+@-webkit-keyframes mouse {
+
+from { background-position: 0px 0px;}
+    to { background-position: -1800px 0px; }
+}
+
+
+.seethru {
+    -webkit-animation-name: seethru;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-delay: 8.75s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-play-state: running;
+    width: 165px;
+    height: 223px;
+    background-image: url(../img/mouseghost.png);
+    opacity: 0;
+}
+
+@-webkit-keyframes seethru {
+
+    10% { opacity: 1; }
+    90% {opacity: 1;}
+    100% { opacity: 0; }
+}
+
+.ghost {
+   
+    position: absolute;
+    top: 690px;
+    left: 1290px;
+    z-index: 95;
+    -webkit-animation-name: ghost;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-delay: 9s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes ghost {
+
+
+     from {
+        top: 690px;
+        left: 1310px;
+    }
+    
+    to {
+        top: -223px;
+        left: 800px;
+    }
+}
+
+
+
+
+.cat {
+    position: absolute;
+    z-index: 100;
+    top: 450px;
+    left: -500px;
+    -webkit-animation-name: cat;
+    -webkit-animation-duration: 4.25s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-iteration-count: 1;   
+    -webkit-animation-direction: normal;
+    -webkit-animation-delay: 3s;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes cat {
+
+    from {
+        top: 450px;
+        left: -500px;
+    }
+    to {
+        top: 430px;
+        left: 700px;
+    }
+}
+
+
+@-webkit-keyframes catmove{
+    from { background-position: 0px 0px;}
+    to { background-position: -9789px 0px; }
+}
+
+.catmove {
+    background-image: url(../img/cat.png);
+    background-position: -9036px;
+    width: 753px;
+    height: 505px;
+  -webkit-animation: catmove 4.2s steps(13, end) 1;
+  -webkit-animation-delay: 2.75s;
+
+}
+
+@-webkit-keyframes again {
+
+    0% { visibility: hidden; }
+    79.9% {visibility: hidden;}
+    80% {opacity: 0;}
+    85% {opacity: 0.5;}
+    90% {opacity: 1;}
+    100% { visibility: visible; }
+}
+
+.text a {
+    background-image: url(../img/title.png);
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 350px;
+    position: absolute;
+    left: 50px;
+    top: 760px;
+    z-index: 110;
+    -webkit-animation: again 12s;
+}
+
+.text a:hover {
+   background-position: 0 -200px; 
+
+}
+
+
+/* ==========================================================================
+   Animations
+   ========================================================================== */
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow:none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
