@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+	$('body').jpreLoader();
+
 /*--------------------------------- variables --------------*/	
 
 	var currentIndex 	= 0,
@@ -96,10 +98,10 @@ function websiteLink(borderChange){
 		
 			if(direction==="down"){
 				currentIndex = $sections.index($(this));
-				console.log(currentIndex);
+				// console.log(currentIndex);
 			}else{
 				currentIndex = $sections.index($(this))-1;
-				console.log(currentIndex);
+				// console.log(currentIndex);
 			}
 		
 		$('nav ul a').eq(currentIndex).addClass("selected");
@@ -249,5 +251,6 @@ function websiteLink(borderChange){
 		$('.contact-form').formvalidation();
 	};
 
+/*--------------------------------- contact form  --------------*/	
 
 });//this is the end of ready!

@@ -119,6 +119,33 @@ li {
   color: #F65857; }
 
 /*========================================Text Styles ===========================*/
+body{
+  display:none;
+}
+#jpreOverlay {
+  background-color: white;
+}
+#jpreSlide{
+  font-size:22px;
+  font-weight:bold;
+  color:red;
+  text-align:center;
+  width:50%;
+  height:30%;
+}
+#jpreLoader{
+  width:100%;
+  height:25px;
+}
+#jpreBar {
+  background-color:#C5F4FF; 
+}
+#jprePercentage {
+  display: none;
+}
+
+/*========================================preloader styles ===========================*/
+
 .wrapper {
   width: 93.75%;
   /*960/1024*100*/
