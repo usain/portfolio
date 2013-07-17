@@ -162,7 +162,7 @@ nav {
 .sceneOne {
   width: 100%;
   background-image: url("../img/grassBG.svg"), url("../img/cityscapeBG.svg");
-  background-position: bottom, center bottom;
+  background-position: 0 552px, center bottom;
   background-repeat: repeat-x, no-repeat;
   position: relative; }
   .sceneOne .wrapper.overflow {
@@ -214,15 +214,15 @@ nav {
 
 .codeGuyTwo {
   position: absolute;
-  top: 200px;
+  top: 220px;
   left: 18.75%;
   /*180/960*100*/
   z-index: 10;
   width: 200px;
   height: 200px;
-  background: url("../img/codeGuy2.svg");
+  /*background: url("../img/codeGuy2.svg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100%;*/
   -webkit-animation-name: codeGuyTwo;
   animation-name: codeGuyTwo;
   -webkit-animation-duration: 5s;
@@ -242,11 +242,18 @@ nav {
 
 @-webkit-keyframes codeGuyTwo {
   50% {
-    top: 300px; } }
+    width: 225px;
+    left:17%;
+    top: 320px; 
+  }
+}
 
 @keyframes codeGuyTwo {
   50% {
-    top: 300px; } }
+    width: 225px;
+    left:17%;
+    top: 320px;  } }
+
 
 /*======================================== tooltips ===========================*/
 .ui-tooltip, .arrow:after {
@@ -637,11 +644,60 @@ footer {
     background: url(../img/linkedin.svg) #f65857;
     background-size: cover; }
 
+/*--------------------------------- IE message -------------------------------------------*/
+
+.ie-message {
+    display: none;
+}
+
+.lt-ie8 .ie-message {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    width: 940px;
+    background-color: black;
+    color: #bf923f;
+}
+
+.ie-message p {
+    font-size: 18px;
+}
+
+.ie-message a {
+    text-decoration: none;
+    color:  #bf923f;
+}
+.ie-message a:hover {
+    color: #db1f42;
+
+}
+
+.lt-ie8 .wrapper {
+    display: none;
+}
+
 /* ==========================================================================
 *******************************************************************************
    Mediaqueries
 *******************************************************************************
    ========================================================================== */
+@media only screen and (max-width: 960px) {
+  
+    .sceneThree .work .showcaseOne {
+      width: 43.3125%;
+    }
+
+    .sceneThree .work .showcaseTwo {
+      width: 43.3125%;
+    }
+
+    .sceneThree .work .dropdown {
+      width: 86.54166666667%;
+    }
+
+}
+
 @media only screen and (max-width: 756px) {
   .sceneOne .wrapper.overflow .speechBubble {
     width: 45%;
