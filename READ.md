@@ -1,1 +1,0 @@
-This Git repository is the code for Dylanjohnscott.com, the portfolio site of front end web developer Dylan Scott.
