@@ -1,8 +1,15 @@
 $(document).ready(function(){
 
-// 	});//end of selected div hover function
+/*--------------------------------- variables --------------*/	
 
-/*--------------------------------- Hover show work images --------------*/
+	var currentIndex 	= 0,
+		$sections		= $('section'),
+		$wrapper		= $('.wrapper'),
+		duration 		= 2500,
+		topMargin 		= parseInt($wrapper.css('margin-top')),
+		$page			= $('html, body');
+
+/*--------------------------------- Hover state for borders --------------*/
 
 websiteLink($('.showcaseOne, .showcaseTwo, .dropdown'));
 
@@ -42,6 +49,17 @@ function websiteLink(borderChange){
 
         	$(this).next($('.dropdown')).slideDown('slow');
 
+   //      	if($('.dropdown').is(':visible')){
+
+   //      		var scrollEnd = $(this).next($('.dropdown')).offset().top;
+   //      		// alert('There is a dropdown already out');
+   //      		$page.animate({
+			// 	scrollTop:scrollEnd},
+			// 	duration,
+			// 	"swing");
+
+			// }
+
       	}else{
 
       		$('.dropdown').slideUp('slow');
@@ -55,28 +73,11 @@ function websiteLink(borderChange){
       	});
 
   });//end of click function*/
-
-/*--------------------------------- waypoints --------------*/	
-
-	// $('.sceneTwo').waypoint(function(direction){
- //  		alert(direction);
-	// });
-
-	var currentIndex 	= 0,
-		// $sections 		= $('.sceneTwo, .sceneThree, .sceneFour'),
-		$sections		= $('section'),
-		$wrapper		= $('.wrapper'),
-		duration 		= 2500,
-		topMargin 		= parseInt($wrapper.css('margin-top')),
-		$page			= $('html, body');
-
-/*------------------ Initialise --------------------*/
-	// $('.nav a').eq(currentIndex).addClass("selected");
-	//console.log($navItems);
 	
-	/*------------------ Nav click handler --------------------*/
+/*------------------ Nav click handler --------------------*/
+
 	$('header a, .backToTop').click(function(e){
-		// alert('this is clicked');
+
 		e.preventDefault();
 		var id = $(this).attr("href");
 		var scrollEnd = $(id).offset().top-10;
@@ -87,11 +88,12 @@ function websiteLink(borderChange){
 		console.log(topMargin);
 	});
 
-	/*------------------ Waypoints selected nav states--------------------*/
-		$sections.waypoint(function(direction){
-			
-			$('nav ul a').eq(currentIndex).removeClass("selected");
-			
+/*------------------ Waypoints selected nav states--------------------*/
+
+	$sections.waypoint(function(direction){
+		
+		$('nav ul a').eq(currentIndex).removeClass("selected");
+		
 			if(direction==="down"){
 				currentIndex = $sections.index($(this));
 				console.log(currentIndex);
@@ -99,10 +101,10 @@ function websiteLink(borderChange){
 				currentIndex = $sections.index($(this))-1;
 				console.log(currentIndex);
 			}
-			
-			$('nav ul a').eq(currentIndex).addClass("selected");
-			
-		}, {offset: "25%"});
+		
+		$('nav ul a').eq(currentIndex).addClass("selected");
+		
+	}, {offset: "25%"});
 /*--------------------------------- Custom tooltips over 'skill pipes'.--------------*/
 
 	$( document ).tooltip({
@@ -121,7 +123,7 @@ function websiteLink(borderChange){
       }
     });
 
-/*--------------------------------- canvas animation --------------*/	
+/*--------------------------------- canvas animations --------------*/	
 //dimensions of canvas are 310 X 40
 
 	html = {x : 310, y : 0, width : -10, endPoint: -300, height: 40, name :'html', speed: 20, color :'#f46622'}
@@ -131,11 +133,6 @@ function websiteLink(borderChange){
 	php = {x : 0, y : 0, width : 10, endPoint: 150, height: 40, name :'php', speed: 20, color :'#5969a4'}
 	wp = {x : 0, y : 0, width : 10, endPoint: 150, height: 40, name :'wordpress', speed: 20, color :'#1c769f'}
 
-	// skillArr.push({skill:'css',color:'#f46622',length:'310'});
-	// skillArr.push({skill:'jquery',color:'#f46622',length:'310'});
-	// skillArr.push({skill:'git',color:'#f46622',length:'310'});
-	// skillArr.push({skill:'php',color:'#f46622',length:'310'});
-	// skillArr.push({skill:'wordpress',color:'#f46622',length:'310'});
 	function wpAnimate(){
 
 		var canvas 	= document.getElementById(wp.name);
@@ -238,7 +235,7 @@ function websiteLink(borderChange){
 
 	}, {offset: "25%"});
 
-/*--------------------------------- show speech bubble after 3 seconds --------------*/
+/*--------------------------------- show speech bubble after #seconds --------------*/
 	
 	setTimeout(speak,5000);
 
@@ -252,5 +249,5 @@ function websiteLink(borderChange){
 		$('.contact-form').formvalidation();
 	};
 
-	//make use of commenting! comment at the end of every function.
+
 });//this is the end of ready!
