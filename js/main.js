@@ -1,13 +1,17 @@
 $(document).ready(function(){
 
-	$('body').jpreLoader();
+	if (!$('html').hasClass('lt-ie9')) {
+
+		$('body').jpreLoader();
+		
+	};
 
 /*--------------------------------- variables --------------*/	
 
 	var currentIndex 	= 0,
 		$sections		= $('section'),
 		$wrapper		= $('.wrapper'),
-		duration 		= 2500,
+		duration 		= 1000,
 		topMargin 		= parseInt($wrapper.css('margin-top')),
 		$page			= $('html, body');
 
@@ -113,7 +117,7 @@ function websiteLink(borderChange){
       	position: {
         my: "center bottom-20",
         at: "center top",
-        delay: 5000,
+        delay: 2000,
         using: function( position, feedback ) {
           $( this ).css( position );
           $( "<div>" )
@@ -128,12 +132,12 @@ function websiteLink(borderChange){
 /*--------------------------------- canvas animations --------------*/	
 //dimensions of canvas are 310 X 40
 
-	html = {x : 310, y : 0, width : -10, endPoint: -300, height: 40, name :'html', speed: 20, color :'#f46622'}
-	css = {x : 310, y : 0, width : -10, endPoint: -290, height: 40, name :'css', speed: 20, color :'#339dd5'}
-	jquery = {x : 310, y : 0, width : -10, endPoint: -240, height: 40, name :'jquery', speed: 20, color :'#111a2a'}
-	git = {x : 0, y : 0, width : 10, endPoint: 130, height: 40, name :'git', speed: 20, color :'#f15034'}
-	php = {x : 0, y : 0, width : 10, endPoint: 150, height: 40, name :'php', speed: 20, color :'#5969a4'}
-	wp = {x : 0, y : 0, width : 10, endPoint: 150, height: 40, name :'wordpress', speed: 20, color :'#1c769f'}
+	html = {x : 310, y : 0, width : -10, endPoint: -300, height: 40, name :'html', speed: 10, color :'#f46622'}
+	css = {x : 310, y : 0, width : -10, endPoint: -290, height: 40, name :'css', speed: 10, color :'#339dd5'}
+	jquery = {x : 310, y : 0, width : -10, endPoint: -240, height: 40, name :'jquery', speed: 10, color :'#111a2a'}
+	git = {x : 0, y : 0, width : 10, endPoint: 130, height: 40, name :'git', speed: 15, color :'#f15034'}
+	php = {x : 0, y : 0, width : 10, endPoint: 150, height: 40, name :'php', speed: 15, color :'#5969a4'}
+	wp = {x : 0, y : 0, width : 10, endPoint: 150, height: 40, name :'wordpress', speed: 15, color :'#1c769f'}
 
 	function wpAnimate(){
 

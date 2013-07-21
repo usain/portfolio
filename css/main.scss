@@ -148,6 +148,33 @@ li {
 
 /*========================================Text Styles ===========================*/
 
+body{
+  display:none;
+}
+#jpreOverlay {
+  background-color: white;
+}
+#jpreSlide{
+  font-size:22px;
+  font-weight:bold;
+  color:red;
+  text-align:center;
+  width:50%;
+  height:30%;
+}
+#jpreLoader{
+  width:100%;
+  height:25px;
+}
+#jpreBar {
+  background-color:#C5F4FF; 
+}
+#jprePercentage {
+  display: none;
+}
+
+/*========================================preloader styles ===========================*/
+
 .wrapper{
     width: 93.75%;/*960/1024*100*/
     max-width: 960px;
@@ -200,7 +227,7 @@ nav {
 .sceneOne {
     width: 100%;
     background-image: url('../img/grassBG.svg'), url('../img/cityscapeBG.svg');
-    background-position: bottom, center bottom;
+    background-position: 0 552px, center bottom;
     background-repeat: repeat-x, no-repeat;
     position: relative;
 
@@ -296,33 +323,37 @@ nav {
         animation-fill-mode: forwards;
     }
 
-    @-webkit-keyframes codeGuyTwo {
-    
-        0% {
-            // width: 200px;
-        }
-        
-        50% {
-            top: 300px;
-        }
+@-webkit-keyframes codeGuyTwo {
+  50% {
+    width: 225px;
+    left:17%;
+    top: 320px; 
+  }
+}
 
-        100% {
-        }
-    }
-    @keyframes codeGuyTwo {
-    
-        0% {
-            // width: 200px;
-        }
-        
-        50% {
-            top: 300px;
-        }
+@-moz-keyframes codeGuyTwo {
+  50% {
+      width: 225px;
+      left:17%;
+      top: 320px;  
+  } 
+}
 
-        100% {
+@-o-keyframes codeGuyTwo {
+  50% {
+      width: 225px;
+      left:17%;
+      top: 320px;  
+  } 
+}
 
-        }
-    }
+@keyframes codeGuyTwo {
+  50% {
+      width: 225px;
+      left:17%;
+      top: 320px;  
+  } 
+}
 
 /*======================================== tooltips ===========================*/
 
@@ -330,10 +361,6 @@ nav {
     background: gold;
     width: 200px;
     position: absolute;
-    border: 10px solid #727272;
-    border-bottom: 0;
-    border-left: 0;
-    border-top: 0;
   }
   .ui-tooltip {
     padding: 10px 20px;
@@ -431,12 +458,21 @@ nav {
 
             .html {
                 background:#f46622 url(../img/html5.svg);
+                background-size: 70%;
+                background-repeat: no-repeat;
+                background-position: center;
             }
             .css {
                 background:#339dd5 url(../img/css3.svg);
+                background-size: 70%;
+                background-repeat: no-repeat;
+                background-position: center;
             }
             .jquery {
                 background:#111a2a url(../img/jquery.svg);
+                background-size: 70%;
+                background-repeat: no-repeat;
+                background-position: center;
             }
         
         .pipeMain {
@@ -466,12 +502,21 @@ nav {
 
             .misc {
                 background:#f15034 url(../img/git.svg);
+                background-size: 70%;
+                background-repeat: no-repeat;
+                background-position: center;
             }
             .php {
                 background:#5969a4 url(../img/php.svg);
+                background-size: 70%;
+                background-repeat: no-repeat;
+                background-position: center;
             }
             .wordpress {
                 background:#1c769f url(../img/wordpress.svg);
+                background-size: 70%;
+                background-repeat: no-repeat;
+                background-position: center;
             }
 
         .pipeMain {
@@ -849,11 +894,71 @@ footer{
         }
 }
 
+/*--------------------------------- IE message -------------------------------------------*/
+
+.ie-message {
+    display: none;
+}
+
+.lt-ie9 .ie-message {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    width: 940px;
+    background-color: #C5F4FF;
+    color: #333333;
+}
+
+.ie-message p {
+    font-size: 18px;
+}
+
+.ie-message p span {
+    text-decoration: underline;
+}
+
+.ie-message a {
+    font-size: 24px;
+    display: block;
+    width: 300px;
+    padding: 10px;
+    margin: 10px auto 0;
+    background-color: silver;
+    text-decoration: none;
+    color:  #333333;
+}
+.ie-message a:hover {
+    color: #db1f42;
+    margin: 5px auto;
+    border-bottom: 5px solid #333333;
+}
+
+.lt-ie9 .wrapper {
+    display: none;
+}
+
 /* ==========================================================================
 *******************************************************************************
    Mediaqueries
 *******************************************************************************
    ========================================================================== */
+@media only screen and (max-width: 960px) {
+  
+    .sceneThree .work .showcaseOne {
+      width: 43.3125%;
+    }
+
+    .sceneThree .work .showcaseTwo {
+      width: 43.3125%;
+    }
+
+    .sceneThree .work .dropdown {
+      width: 86.54166666667%;
+    }
+
+}
+
 
 @media only screen and (max-width: 756px) {
         
