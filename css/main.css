@@ -165,6 +165,13 @@ header {
     line-height: 2.125em;
     /*10/16*/
     float: left; }
+  header .logo {
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    background: url("../img/logo.svg") no-repeat center;
+    display: inline-block;
+    float: left; }
 
 nav {
   height: 3.125em;
@@ -209,6 +216,10 @@ nav {
       /*275/960*100*/ }
     .sceneOne .wrapper.overflow img:nth-child(3) {
       top: 385px; }
+    .sceneOne .wrapper.overflow img:nth-child(4) {
+      top: 450px;
+      left: 72.6875%;
+      /*525/960*100*/ }
     .sceneOne .wrapper.overflow .hide {
       display: none; }
     .sceneOne .wrapper.overflow .speechBubble {

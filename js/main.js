@@ -255,6 +255,25 @@ function websiteLink(borderChange){
 		$('.contact-form').formvalidation();
 	};
 
-/*--------------------------------- contact form  --------------*/	
+/*--------------------------------- navbar logo --------------*/	
+
+//when the user has scrolled to the top of the second section animate the name across by 40px and then make an image appear
+	
+	$('.sceneTwo').waypoint(function(direction){
+		
+		if (direction == 'down') {
+
+			$('header .wrapper').prepend('<div class="logo">');
+
+
+		}else{
+
+			$('.logo').remove();
+
+		};	
+		
+
+	});
+
 
 });//this is the end of ready!
