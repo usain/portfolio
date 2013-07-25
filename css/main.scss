@@ -204,6 +204,10 @@ header {
         display: inline-block;
         float: left;
     }
+
+    .nav-control {
+        display: none
+    }
 }
 
 nav {
@@ -261,13 +265,37 @@ nav {
         left: 28.64583333333%;/*275/960*100*/
        }
 
-       img:nth-child(3) {
+       img:nth-child(3) {//large bush
         top: 385px;
        }
 
-        img:nth-child(4) {
+        img:nth-child(4) {//spraycan
          top: 450px;
          left: 72.6875%;/*525/960*100*/
+        }
+
+        img:nth-child(5) {//the large cloud
+         top: 50px;
+         left: 525px;/*525/960*100*/
+        }
+
+        img:nth-child(6) {//the small cloud
+            z-index: 20;
+            top: 100px;
+            left: 20px;/*20/960*100*/
+        }
+
+        img:nth-child(7) {//the Sun
+            z-index: 10;
+            top: 100px;
+            left: 100px;
+        }
+
+        img:nth-child(8) {//second  small cloud
+            z-index: 10;
+            width: 100px;
+            top: 140px;
+            left: 200px;
         }
 
         .hide {
@@ -276,7 +304,7 @@ nav {
 
         .speechBubble {
             width: 40.625%;/*390/960*100*/
-            background-color: white;
+            background-color: rgba(255,255,255,0.5);
             border-radius: 20px;
             padding: 20px 2.083333333333%;/*20/960*100*/
             position: absolute;
@@ -289,18 +317,12 @@ nav {
             }
 
             .tail {
-                background-color: white;
-                width: 30px;
-                height: 30px;
-                // border-radius: 6px;
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;
+                border-top: 20px solid rgba(255,255,255,0.5);
                 position: absolute;
-                top: 100px;
+                top: 115px;
                 left: 50px;
-                -webkit-transform: rotate(45deg);
-                -moz-transform: rotate(45deg);
-                -ms-transform: rotate(45deg);
-                -o-transform: rotate(45deg);
-                transform: rotate(45deg);
             }
 
         }
@@ -309,65 +331,78 @@ nav {
 }
 
     .codeGuyTwo {   //the red character
+        width: 200px;
+        height: 172px;
+        background: url('../img/codeGuy2.svg');
+        // background-position: 0 -519px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+        -webkit-animation: codeGuyTwo 4s steps(4, end) infinite;
+        -moz-animation: codeGuyTwo 4s steps(4, end) infinite;
+        -o-animation: codeGuyTwo 4s steps(4, end) infinite;
+        animation: codeGuyTwo 4s steps(4, end) infinite;
+    }
+
+@-webkit-keyframes codeGuyTwo {
+  from  {background-position: 0 0px;}
+  to    {background-position: 0 -684px;}
+}
+@-moz-keyframes codeGuyTwo {
+  from  {background-position: 0 0px;}
+  to    {background-position: 0 -684px;}
+}
+@-o-keyframes codeGuyTwo {
+  from  {background-position: 0 0px;}
+  to    {background-position: 0 -684px;}
+}
+@keyframes codeGuyTwo {
+  from  {background-position: 0 0px;}
+  to    {background-position: 0 -684px;}
+}
+
+    .elevator {
         position: absolute;
         top: 200px;
         left: 18.75%;/*180/960*100*/
         z-index: 10;
-        width: 200px;
-        height: 200px;
-        background: url('../img/codeGuy2.svg');
-        background-repeat: no-repeat;
-        background-size: 100%;
 
-        -webkit-animation-name: codeGuyTwo;
-        animation-name: codeGuyTwo;
-        -webkit-animation-duration: 5s;
-        animation-duration: 5s;
+        -webkit-animation-name: elevator;
+        -moz-animation-name: elevator;
+        -o-animation-name: elevator;
+        animation-name: elevator;
+        -webkit-animation-duration: 8s;
+        animation-duration: 8s;
         -webkit-animation-timing-function: ease-out;
         animation-timing-function: ease-out;
         -webkit-animation-iteration-count: infinite; 
         animation-iteration-count: infinite;     
-        -webkit-animation-direction: normal;
-        animation-direction: normal;
-        -webkit-animation-delay: 1s;
-        animation-delay: 1s;
-        -webkit-animation-play-state: running;
-        animation-play-state: running;
-        -webkit-animation-fill-mode: forwards;
-        animation-fill-mode: forwards;
     }
 
-@-webkit-keyframes codeGuyTwo {
+@-webkit-keyframes elevator {
   50% {
-    width: 225px;
-    left:17%;
-    top: 320px; 
-  }
-}
-
-@-moz-keyframes codeGuyTwo {
-  50% {
-      width: 225px;
       left:17%;
-      top: 320px;  
+      top: 340px;  
   } 
 }
-
-@-o-keyframes codeGuyTwo {
+@-moz-keyframes elevator {
   50% {
-      width: 225px;
       left:17%;
-      top: 320px;  
+      top: 340px;  
   } 
-}
-
-@keyframes codeGuyTwo {
+}   
+@-o-keyframes elevator {
   50% {
-      width: 225px;
       left:17%;
-      top: 320px;  
+      top: 340px;  
   } 
-}
+}   
+@keyframes elevator {
+  50% {
+      left:17%;
+      top: 340px;  
+  } 
+} 
 
 /*======================================== tooltips ===========================*/
 
@@ -714,8 +749,12 @@ nav {
 
 .sceneFour {
     width: 100%;
-    background: url('../img/subterraneanDrape.png') repeat-x, #727272;
+    background: url('../img/subterraneanDrape.png') repeat-x , #727272;
     padding-top: 80px;
+
+    .wrapper {
+        background: url(../img/ruby.svg) no-repeat left bottom, url(../img/saphire.svg) no-repeat 100px bottom, url(../img/emerald.svg) no-repeat 60px bottom;
+    }
 
     .contact {
         margin: 60px auto;
@@ -958,6 +997,22 @@ footer{
 *******************************************************************************
    ========================================================================== */
 @media only screen and (max-width: 960px) {
+
+       .sceneOne {
+
+            .wrapper.overflow {
+                
+                .speechBubble{
+                    
+                    .tail {
+                        top: 140px;
+                    }
+
+                }
+
+            }
+
+        }
   
     .sceneThree .work .showcaseOne {
       width: 43.3125%;
@@ -979,6 +1034,7 @@ footer{
     .sceneOne {
 
         .wrapper.overflow {
+            overflow: hidden;
 
             .speechBubble {
                 width: 45%;/*390/960*100*/
@@ -1222,6 +1278,13 @@ footer{
     header {
       min-width: 300px;
       height: auto;
+
+      .logo {
+        position: absolute;
+        margin: 2px 0 0 12px;
+        float: none;
+        left: 0;
+      }
     
       h1 {
         font-size: 0.875em;
@@ -1229,17 +1292,31 @@ footer{
         float: none; 
         text-align: center;
       }
+      
+        .nav-control {
+            margin: 6px 12px 0 0;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 36px;
+            height: 36px;
+            background: url(../img/dropdown.svg) no-repeat;
+        }
+
     }
 
 
     nav {
-        float: none;
+        float: left;
         margin: 0;
         position: relative;
         width: 100%;
         min-width: 300px;
         margin: 0 auto;
         display: block;
+        display: none;
+        height: auto;
 
     
             li {
@@ -1374,12 +1451,12 @@ footer{
         }
 
         .contactDetails {
-            width: 93.75%;/*220/960*100*/
+            width: 60%;/*220/960*100*/
             background: silver;
             border-radius: 6px;
-            padding: 10px 10px;
+            padding: 10px 50px;
             float: none;
-            margin-right: 0;
+            margin: 0 auto;
 
 
             .slat {
@@ -1402,7 +1479,7 @@ footer{
         }
 
         .contact-form {
-            margin-top: 10px;
+            margin-top: 20px;
             float: none;
             width: 93.75%;/*360/640*100*/
 

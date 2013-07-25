@@ -69,7 +69,7 @@
 		.appendTo('body');
 		
 		if(jpreOptions.showSplash) {
-			jContent = $('<div><img src="img/codeGuy2.svg" alt="hello, this is the portfolio site of Dylan John Scott." /></div>')
+			jContent = $('<div><img src="img/preload.svg" alt="hello, this is the portfolio site of Dylan John Scott." /></div>')
 			.attr('id', 'jpreSlide')
 			.appendTo(jOverlay);
 			

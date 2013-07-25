@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(window).load(function(){
 
 	if (!$('html').hasClass('lt-ie9')) {
 
@@ -275,5 +275,55 @@ function websiteLink(borderChange){
 
 	});
 
+/*--------------------------------- parallax ---------------------*/	
+
+		// console.log("this is working");
+	
+		$('.sceneOne').mousemove(function(e){
+	
+			// var msg = "handler for the mouse called at ";
+			// msg += e.pageX + ", " + e.pageY;
+			// console.log(msg);
+
+			var windowWidth = $(window).innerWidth();
+	
+			$('#cloudLrg').stop().css({
+				left : 0.06*(0.5*windowWidth - e.pageX)+525,
+				top : 0.06*(0.5*windowWidth - e.pageY)+50
+			});
+	
+			$('#cloudSml').stop().css({
+				left : 0.04*(0.5*windowWidth - e.pageX)+20,
+				top : 0.04*e.pageY+100
+			});
+
+			$('#sun').stop().css({
+				left : 0.02*(0.5*windowWidth - e.pageX)+100,
+				top : 0.02*(0.5*windowWidth - e.pageY)+100
+			});
+
+			$('#cloudSml2').stop().css({
+				left : 0.02*(0.5*windowWidth - e.pageX)+200,
+				top : 0.02*(0.5*windowWidth - e.pageY)+140
+			});
+	
+		});
+
+/*--------------------------------- dropdown menu ---------------------*/
+
+	$('.nav-control').click(function(){
+
+		//alert("button clicked");
+		$('nav').slideToggle("slow");
+
+	})
+
+	$(window).resize(function(){
+		// console.log("this is resizing");
+		if ($(window).width()>500){
+			$('nav').removeAttr("style");
+		};
+
+	});
 
 });//this is the end of ready!

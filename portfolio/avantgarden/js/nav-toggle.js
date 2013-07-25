@@ -11,7 +11,7 @@ $('document').ready(function(){
 	})
 
 	$(window).resize(function(){
-		console.log("this is resizing");
+		// console.log("this is resizing");
 		if ($(window).width()>480){
 			$('.contact').removeAttr("style");
 		};
