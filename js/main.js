@@ -1,6 +1,6 @@
 $(window).load(function(){
 
-	if (!$('html').hasClass('lt-ie9')) {
+	if (!$('html').hasClass('lt-ie9, lt-ie8, lt-ie7 ')) {
 
 		$('body').jpreLoader();
 		
@@ -305,6 +305,11 @@ function websiteLink(borderChange){
 			$('#cloudSml2').stop().css({
 				left : 0.02*(0.5*windowWidth - e.pageX)+200,
 				top : 0.02*(0.5*windowWidth - e.pageY)+140
+			});
+
+			$('#balloon').stop().css({
+				right : 0.1*(0.5*windowWidth - e.pageX)+100,
+				top : 0.1*(0.5*windowWidth - e.pageY)+140
 			});
 	
 		});

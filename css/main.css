@@ -240,6 +240,10 @@ nav {
       width: 100px;
       top: 140px;
       left: 200px; }
+    .sceneOne .wrapper.overflow img:nth-child(9) {
+      z-index: 50;
+      top: 140px;
+      right: 100px; }
     .sceneOne .wrapper.overflow .hide {
       display: none; }
     .sceneOne .wrapper.overflow .speechBubble {
